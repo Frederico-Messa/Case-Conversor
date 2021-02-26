@@ -37,4 +37,8 @@ while cursor_2 < len(input_file_content):
     elif not valid and not (input_file_content[cursor_2].isalpha() or input_file_content[cursor_2] == '_'):
         output_file.write(input_file_content[cursor_2])
 
+    if input_file_content[cursor_2] == '\\':
+        cursor_2 += 1
+        output_file.write(input_file_content[cursor_2])
+
     cursor_2 += 1
