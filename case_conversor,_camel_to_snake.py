@@ -21,8 +21,6 @@ cursor_1 = 0
 cursor_2 = 0
 valid = False
 
-token = ''
-
 while cursor_2 < len(input_file_content):
     if not valid and (input_file_content[cursor_2].isalpha() or input_file_content[cursor_2] == '_'):
         cursor_1 = cursor_2
